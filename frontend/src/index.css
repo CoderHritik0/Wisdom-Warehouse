@@ -1,10 +1,49 @@
-body {
+:root{
+  --primary: #abedda;
+  --secondary: #b7f0e0;
+  --accent: #607670;
+  --background: #e6eae9;
+  --font: #090b0b;
+  --edit: #b7f0e0;
+  --delete: #ff3636;
+  --notebg: darkgrey;
+}
+
+html body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
+  color: var(--font);
+}
+
+.btn.btn-outline-edit {
+  color: var(--edit);
+  outline: 1px solid var(--edit);
+  background-color: transparent;
+}
+.btn.btn-outline-edit:hover {
+  color: black;
+  background-color: var(--edit);
+  outline: 0;
+}
+
+.card.note, .list-group-flush .list-group-item {
+  background-color: var(--notebg);
+}
+
+.btn.btn-outline-delete {
+  color: var(--delete);
+  outline: 1px solid var(--delete);
+  background-color: transparent;
+}
+.btn.btn-outline-delete:hover {
+  color: black;
+  background-color: var(--delete);
+  outline: 0;
 }
 
 code {
