@@ -1,19 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap');
 :root{
   --primary: #abedda;
   --secondary: #b7f0e0;
   --accent: #607670;
-  --background: #e6eae9;
+  --background: #dbfff5;
   --font: #090b0b;
-  --edit: #b7f0e0;
+  --edit: #607670;
   --delete: #ff3636;
-  --notebg: darkgrey;
+  --notebg: #ececec;
 }
 
 html body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Alkatra", system-ui;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background);
@@ -26,7 +25,7 @@ html body {
   background-color: transparent;
 }
 .btn.btn-outline-edit:hover {
-  color: black;
+  color: white;
   background-color: var(--edit);
   outline: 0;
 }
@@ -44,9 +43,4 @@ html body {
   color: black;
   background-color: var(--delete);
   outline: 0;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }

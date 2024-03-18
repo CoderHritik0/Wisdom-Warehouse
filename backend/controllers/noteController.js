@@ -10,7 +10,7 @@ const getNotes = async (req, res) => {
 
 // get single note
 const getSingleNote = async (req, res) => {
-    const { id } = req.params;
+    const {id} = req.params;
 
     if(!mongoose.Types.ObjectId.isValid(id)){
         return res.status(404).json({error: 'No such note found'});
