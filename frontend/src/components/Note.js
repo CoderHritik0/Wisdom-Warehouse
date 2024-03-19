@@ -12,13 +12,9 @@ const Note = ({ note }) => {
           <ul className="list-group list-group-flush">
             <li className="list-group-item">{note.category}</li>
           </ul>
-          <div className="card-body d-flex justify-content-end">
-            <a href="/" className="card-link">
-            <button type="button" className="btn btn-outline-edit">Edit</button>
-            </a>
-            <a href="/" className="card-link">
-            <button type="button" className="btn btn-outline-delete">Delete</button>
-            </a>
+          <div className="card-body d-flex flex-column justify-content-center">
+            <button type="button" className="btn btn-outline-edit m-1">Edit</button>
+            <button type="button" className="btn btn-outline-delete m-1">Delete</button>
           </div>
         </div>
   );

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap');
+
 :root{
   --primary: #abedda;
   --secondary: #b7f0e0;
@@ -20,18 +21,18 @@ html body {
 }
 
 .btn.btn-outline-edit {
-  color: var(--edit);
-  outline: 1px solid var(--edit);
+  color: var(--accent);
+  outline: 1px solid var(--secondary);
   background-color: transparent;
 }
 .btn.btn-outline-edit:hover {
   color: white;
-  background-color: var(--edit);
+  background-color: var(--secondary);
   outline: 0;
 }
 
 .card.note, .list-group-flush .list-group-item {
-  background-color: var(--notebg);
+  background-color: whitesmoke;
 }
 
 .btn.btn-outline-delete {
@@ -43,4 +44,19 @@ html body {
   color: black;
   background-color: var(--delete);
   outline: 0;
+}
+
+.btn.btn-outline-add {
+  color: var(--accent);
+  outline: 1px solid var(--accent);
+  background-color: transparent;
+}
+
+.btn.btn-outline-add:hover {
+  color: white;
+  background-color: var(--accent);
+  outline: 0;
+}
+.create {
+  background-color: var(--notebg);
 }
