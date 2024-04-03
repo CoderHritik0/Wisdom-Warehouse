@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap');
 
-:root{
+:root {
   --primary: #abedda;
   --secondary: #b7f0e0;
   --accent: #607670;
@@ -8,6 +8,7 @@
   --font: #090b0b;
   --edit: #607670;
   --delete: #ff3636;
+  --error: #e7195a;
   --notebg: #ececec;
 }
 
@@ -25,13 +26,15 @@ html body {
   outline: 1px solid var(--secondary);
   background-color: transparent;
 }
+
 .btn.btn-outline-edit:hover {
-  color: white;
+  color: black;
   background-color: var(--secondary);
   outline: 0;
 }
 
-.card.note, .list-group-flush .list-group-item {
+.card.note,
+.list-group-flush .list-group-item {
   background-color: whitesmoke;
 }
 
@@ -40,6 +43,7 @@ html body {
   outline: 1px solid var(--delete);
   background-color: transparent;
 }
+
 .btn.btn-outline-delete:hover {
   color: black;
   background-color: var(--delete);
@@ -57,6 +61,16 @@ html body {
   background-color: var(--accent);
   outline: 0;
 }
+
 .create {
   background-color: var(--notebg);
+}
+
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
 }
